@@ -1,0 +1,31 @@
+@media screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .block--4 {
+    order: 3;
+  }
+  .block--3 {
+    order: 4;
+  }
+
+  @for $i from 5 through 6 {
+    .block--#{$i} {
+      order: $i;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @for $i from 4 through 6 {
+      .block--#{$i} {
+        order: 6 - $i + 4;
+      }
+    }
+  }
+
+}
