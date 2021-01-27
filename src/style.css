@@ -53,6 +53,7 @@ body {
   .container {
     grid-template-columns: 1fr 1fr;
   }
+  
   .block--4 {
     order: 3;
   }
@@ -73,6 +74,7 @@ body {
     .container {
       grid-template-columns: 1fr 1fr 1fr;
     }
+
     .block--4 {
       order: 6;
     }
